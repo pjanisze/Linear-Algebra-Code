@@ -2,12 +2,8 @@
 
 namespace LinAlg
 {
-	public class Vectors
+	partial class MainClass
 	{
-		public Vectors()
-		{
-		}
-
 
 		public static Vector createVec(int n)
 		{
@@ -15,7 +11,7 @@ namespace LinAlg
 			Vector vec = new Vector();
 			vec.size = n;
 			vec.vars = new double[vec.size];
-			Console.WriteLine("Enter the values of the vector:");
+			//Console.WriteLine("Enter the values of the vector:");
 			for (int i = 0; i < vec.size; i++)
 			{
 				vec.vars[i] = Convert.ToDouble(Console.ReadLine());
@@ -43,9 +39,9 @@ namespace LinAlg
 			Vector vec = new Vector();
 			vec.size = 3;
 			vec.vars = new double[3];
-			vec.vars[0] = (v1[1] * v2[2]) - (v1[2] * v2[1]);
-			vec.vars[1] = (v1[2] * v2[0]) - (v1[0] * v2[2]);
-			vec.vars[2] = (v1[0] * v2[1]) - (v1[1] * v2[0]);
+			vec.vars[0] = (v1.vars[1] * v2.vars[2]) - (v1.vars[2] * v2.vars[1]);
+			vec.vars[1] = (v1.vars[2] * v2.vars[0]) - (v1.vars[0] * v2.vars[2]);
+			vec.vars[2] = (v1.vars[0] * v2.vars[1]) - (v1.vars[1] * v2.vars[0]);
 			return vec;
 		}
 		public static double dotProd(Vector v1, Vector v2)
@@ -61,6 +57,20 @@ namespace LinAlg
 			}
 			return dot;
 		}
+		public static void printVector(Vector vec)
+		{
+			Console.Write("[");
+			for (int i = 0; i < vec.size; i++)
+			{
+				Console.Write("{0}", vec.vars[i]);
+				if (i != vec.size - 1)
+				{
+					Console.Write(", ");
+				}
+			}
+			Console.WriteLine("]");
+		}
+
 
 	}
 }

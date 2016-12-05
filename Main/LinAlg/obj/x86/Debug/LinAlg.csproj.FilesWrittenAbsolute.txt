@@ -1,0 +1,5 @@
+/Users/pauljaniszewski/Documents/Linear-Algebra-Code/Main/LinAlg/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/pauljaniszewski/Documents/Linear-Algebra-Code/Main/LinAlg/bin/Debug/LinAlg.exe.mdb
+/Users/pauljaniszewski/Documents/Linear-Algebra-Code/Main/LinAlg/bin/Debug/LinAlg.exe
+/Users/pauljaniszewski/Documents/Linear-Algebra-Code/Main/LinAlg/obj/x86/Debug/LinAlg.exe
+/Users/pauljaniszewski/Documents/Linear-Algebra-Code/Main/LinAlg/obj/x86/Debug/LinAlg.exe.mdb
